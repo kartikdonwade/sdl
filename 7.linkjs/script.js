@@ -13,8 +13,9 @@ const calculateHumanLifetime = () => {
 
 // Variables to store a string
 const storeString = () => {
-  const firstName = "sdl";
-  const lastName = "lab";
+  const firstName = prompt("Enter your first name:");
+
+  const lastName = prompt("Enter your last name:");
   const fullName = `${firstName} ${lastName}`;
   alert(`Full Name: ${fullName}`);
 };
@@ -34,8 +35,4 @@ const getTimeOfDay = () => {
 };
 
 // Button event listeners
-document
-  .getElementById("calculateHumanLifetime")
-  .addEventListener("click", calculateHumanLifetime);
-document.getElementById("storeString").addEventListener("click", storeString);
-document.getElementById("getTimeOfDay").addEventListener("click", getTimeOfDay);
+

@@ -45,7 +45,9 @@
 
     <h2>Gmail Registration Form</h2>
 
-    <form id="registrationForm" onsubmit="return validateForm()">
+    <form id="registrationForm" onsubmit="if(  validateForm())alert('Form Submmitted');else {
+        return validateForm();
+    }">
         <label for="fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required><br>
         <span id="fullNameError" class="error-message"></span><br>
